@@ -1,0 +1,169 @@
+/* OBSIDIAN MONOKAI-INSPIRED HEADINGS WITH IMPROVED SPACING */
+
+/* Base heading styles */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6,
+.cm-header-1,
+.cm-header-2,
+.cm-header-3,
+.cm-header-4,
+.cm-header-5,
+.cm-header-6 {
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  margin: 0; /* Reset margins for better control */
+}
+
+/* Monokai color palette */
+:root {
+  --monokai-background: #272822;
+  --monokai-yellow: #E6DB74;
+  --monokai-orange: #FD971F;
+  --monokai-red: #F92672;
+  --monokai-magenta: #FD5FF0;
+  --monokai-purple: #AE81FF;
+  --monokai-blue: #66D9EF;
+  --monokai-green: #A6E22E;
+  --monokai-gray: #75715E;
+  --monokai-foreground: #F8F8F2;
+}
+
+/* Improved spacing between all elements */
+.markdown-preview-view p,
+.markdown-preview-view ul,
+.markdown-preview-view ol,
+.markdown-preview-view blockquote,
+.markdown-preview-view pre {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+/* H1 - Pink/Red (Function names in Monokai) */
+.markdown-preview-view h1,
+.cm-header-1 {
+  font-size: 26px;
+  color: var(--monokai-red);
+  border-bottom: 2px solid var(--monokai-red);
+  padding: 0.3em 0.5em 0.3em 0.3em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+/* H2 - Blue (Keywords in Monokai) */
+.markdown-preview-view h2,
+.cm-header-2 {
+  font-size: 22px;
+  color: var(--monokai-blue);
+  border-bottom: 1px solid var(--monokai-blue);
+  padding: 0.2em 0.5em 0.2em 0.3em;
+  margin-top: 1.3em;
+  margin-bottom: 0.7em;
+  font-style: italic; /* Keywords are often italic in Monokai */
+}
+
+/* H3 - Green (Class/Method names in Monokai) */
+.markdown-preview-view h3,
+.cm-header-3 {
+  font-size: 20px;
+  color: var(--monokai-green);
+  padding: 0.15em 0.5em 0.15em 0.5em;
+  border-left: 3px solid var(--monokai-green);
+  margin-top: 1.1em;
+  margin-bottom: 0.6em;
+}
+
+/* H4 - Orange (Numbers in Monokai) */
+.markdown-preview-view h4,
+.cm-header-4 {
+  font-size: 18px;
+  color: var(--monokai-orange);
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-left: 2px solid var(--monokai-orange);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* H5 - Purple (Constants in Monokai) */
+.markdown-preview-view h5,
+.cm-header-5 {
+  font-size: 16px;
+  color: var(--monokai-purple);
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-left: 2px solid var(--monokai-purple);
+  margin-top: 0.9em;
+  margin-bottom: 0.4em;
+}
+
+/* H6 - Yellow (Strings in Monokai) */
+.markdown-preview-view h6,
+.cm-header-6 {
+  font-size: 15px;
+  color: var(--monokai-yellow);
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  border-left: 2px solid var(--monokai-yellow);
+  margin-top: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+/* Ensure header hash marks in edit mode match heading colors */
+.cm-formatting-header-1 { color: var(--monokai-red); }
+.cm-formatting-header-2 { color: var(--monokai-blue); }
+.cm-formatting-header-3 { color: var(--monokai-green); }
+.cm-formatting-header-4 { color: var(--monokai-orange); }
+.cm-formatting-header-5 { color: var(--monokai-purple); }
+.cm-formatting-header-6 { color: var(--monokai-yellow); }
+
+/* Subtle hover effects with reduced opacity for better performance */
+.markdown-preview-view h1:hover { background-color: rgba(249, 38, 114, 0.08); }
+.markdown-preview-view h2:hover { background-color: rgba(102, 217, 239, 0.08); }
+.markdown-preview-view h3:hover { background-color: rgba(166, 226, 46, 0.08); }
+.markdown-preview-view h4:hover { background-color: rgba(253, 151, 31, 0.08); }
+.markdown-preview-view h5:hover { background-color: rgba(174, 129, 255, 0.08); }
+.markdown-preview-view h6:hover { background-color: rgba(230, 219, 116, 0.08); }
+
+/* Improve spacing between consecutive headings (condensed) */
+.markdown-preview-view h1 + h2 { margin-top: 0.6em; }
+.markdown-preview-view h2 + h3 { margin-top: 0.5em; }
+.markdown-preview-view h3 + h4 { margin-top: 0.4em; }
+.markdown-preview-view h4 + h5 { margin-top: 0.3em; }
+.markdown-preview-view h5 + h6 { margin-top: 0.2em; }
+
+/* Heading-to-text spacing */
+.markdown-preview-view h1 + p,
+.markdown-preview-view h2 + p,
+.markdown-preview-view h3 + p,
+.markdown-preview-view h4 + p,
+.markdown-preview-view h5 + p,
+.markdown-preview-view h6 + p {
+  margin-top: 0.5em;
+}
+
+/* Improve line height for paragraph text */
+.markdown-preview-view p {
+  line-height: 1.6;
+}
+
+/* Add subtle borders to improve scanability */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  border-radius: 3px;
+}
+
+/* Prevent overlapping when navigating to headings with internal links */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+  scroll-margin-top: 20px;
+}
